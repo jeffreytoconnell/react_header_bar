@@ -1,18 +1,17 @@
 import React from 'react';
-
 import './navigation-bar.css';
 
 export default function NavigationBar(props) {
-    const links = props.links.map((link, index) => (
-        <li key={index}>
+    const links = props.links.map((link, index) => (      // found in index.js 
+        <li key={index}>  
             <a href={link.href}>
                 {link.text}
             </a>
         </li>
     ));
 
-    return (
-        <div className="navigation-bar">
+    return (                // found in index.js
+        <div className="navigation-bar">    
             <h1>{props.title}</h1>
             <nav className="navigation-bar-nav">
                 <ul>
